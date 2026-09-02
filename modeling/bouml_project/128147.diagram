@@ -1,0 +1,207 @@
+format 224
+
+classcanvas 128019 class_ref 128147 // alunos
+  classdiagramsettings member_max_width 0 end
+  xyz 40 286.3 2000
+end
+classcanvas 128147 class_ref 128275 // utilizador
+  classdiagramsettings member_max_width 0 end
+  xyz 42.9 92.9 2000
+end
+classcanvas 128275 class_ref 128403 // formador
+  classdiagramsettings member_max_width 0 end
+  xyz 313 564.5 2000
+end
+classcanvas 128403 class_ref 128531 // administrativo
+  classdiagramsettings member_max_width 0 end
+  xyz 470.1 300 2000
+end
+classcanvas 129043 class_ref 128659 // estagio
+  classdiagramsettings member_max_width 0 end
+  xyz 300.7 29.4 2000
+end
+classcanvas 129171 class_ref 128787 // avaliacao_anual_estabelecimento
+  classdiagramsettings member_max_width 0 end
+  xyz 1019.2 31.2 2000
+end
+classcanvas 129299 class_ref 128915 // curso
+  classdiagramsettings member_max_width 0 end
+  xyzwh 35.8 755.9 2000 79 71
+end
+classcanvas 129427 class_ref 129043 // turma
+  classdiagramsettings member_max_width 0 end
+  xyz 54.9 463.7 2000
+end
+classcanvas 129683 class_ref 129299 // vagas
+  classdiagramsettings member_max_width 0 end
+  xyz 546.4 702.1 2000
+end
+classcanvas 129811 class_ref 129427 // empresas
+  classdiagramsettings member_max_width 0 end
+  xyz 834.7 372.9 2000
+end
+classcanvas 129939 class_ref 129555 // estabelecimentos
+  classdiagramsettings member_max_width 0 end
+  xyz 1068.6 214.1 2000
+end
+classcanvas 130067 class_ref 129683 // ramo
+  classdiagramsettings member_max_width 0 end
+  xyz 857.9 824.2 2000
+end
+classcanvas 130195 class_ref 129811 // zona
+  classdiagramsettings member_max_width 0 end
+  xyz 1192 785.4 2000
+end
+classcanvas 130323 class_ref 129939 // transporte
+  classdiagramsettings member_max_width 0 end
+  xyz 1417.2 599.1 2000
+end
+classcanvas 130451 class_ref 130067 // produtos
+  classdiagramsettings member_max_width 0 end
+  xyz 1417.5 296.6 2000
+end
+classcanvas 130707 class_ref 130195 // responsavel
+  classdiagramsettings member_max_width 0 end
+  xyz 777 29.3 2005
+end
+classcanvas 134675 class_ref 136723 // ano_letivo
+  classdiagramsettings member_max_width 0 end
+  xyz 462.7 466.9 2006
+end
+relationcanvas 128659 relation_ref 128147 // <generalisation>
+  from ref 128019 z 2001 to ref 128147
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128787 relation_ref 128275 // <generalisation>
+  decenter_begin 85
+  from ref 128403 z 2001 to ref 128147
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128915 relation_ref 128403 // <generalisation>
+  decenter_begin 202
+  from ref 128275 z 2001 to ref 128147
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130835 relation_ref 128531 // <association>
+  decenter_begin 54
+  decenter_end 180
+  from ref 129043 z 2006 to ref 130707
+  no_role_a no_role_b
+  multiplicity_a_pos 755 68 3000 multiplicity_b_pos 455 52 3000
+end
+relationcanvas 130963 relation_ref 128659 // estabelecimentos_repsonsavel
+  decenter_end 944
+  from ref 129939 z 2006 label "estabelecimentos_repsonsavel" italic max_width 255 xyz 874.5 214 2006 to ref 130707
+  no_role_a no_role_b
+  multiplicity_a_pos 877 187 3000 multiplicity_b_pos 1047 301 3000
+end
+relationcanvas 131219 relation_ref 128915 // <association>
+  from ref 129299 z 2001 to ref 129427
+  no_role_a no_role_b
+  multiplicity_a_pos 42 520 3000 multiplicity_b_pos 56 734 3000
+end
+relationcanvas 131347 relation_ref 129043 // <association>
+  from ref 129171 z 2001 to ref 129939
+  no_role_a no_role_b
+  multiplicity_a_pos 1117 203 3000 multiplicity_b_pos 1099 88 3000
+end
+relationcanvas 131475 relation_ref 129171 // <association>
+  decenter_end 333
+  from ref 129043 z 2001 to ref 129939
+  no_role_a no_role_b
+  multiplicity_a_pos 1047 311 3000 multiplicity_b_pos 455 147 3000
+end
+relationcanvas 131603 relation_ref 129299 // empresas_estabelecimentos
+  decenter_end 754
+  from ref 129811 z 2001 label "empresas_estabelecimentos" italic max_width 255 xyz 911.5 404 2001 to ref 129939
+  no_role_a no_role_b
+  multiplicity_a_pos 1030 403 3000 multiplicity_b_pos 937 448 3000
+end
+relationcanvas 131731 relation_ref 129427 // empresas_vagas
+  from ref 129811 z 2001 label "empresas_vagas" italic max_width 255 xyz 678 591.5 2001 to ref 129683
+  no_role_a no_role_b
+  multiplicity_a_pos 633 702 3000 multiplicity_b_pos 812 510 3000
+end
+relationcanvas 132243 relation_ref 129939 // <association>
+  decenter_end 379
+  from ref 128019 z 2001 to ref 129043
+  no_role_a no_role_b
+  multiplicity_a_pos 252 105 3000 multiplicity_b_pos 111 268 3000
+end
+relationcanvas 132371 relation_ref 130067 // <association>
+  decenter_begin 767
+  from ref 128275 z 2001 to ref 129043
+  no_role_a no_role_b
+  multiplicity_a_pos 333 207 3000 multiplicity_b_pos 349 545 3000
+end
+relationcanvas 132627 relation_ref 130323 // estabelecimentos_zona
+  from ref 130195 z 2001 label "estabelecimentos_zona" italic max_width 255 xyz 1115.5 603.5 2001 to ref 129939
+  no_role_a no_role_b
+  multiplicity_a_pos 1123 463 3000 multiplicity_b_pos 1200 767 3000
+end
+relationcanvas 134035 relation_ref 144915 // <association>
+  from ref 128019 z 2001 to ref 128403
+  no_role_a no_role_b
+  multiplicity_a_pos 448 327 3000 multiplicity_b_pos 134 327 3000
+end
+relationcanvas 134163 relation_ref 145043 // <association>
+  from ref 128403 z 2001 to ref 130067
+  no_role_a no_role_b
+  multiplicity_a_pos 828 805 3000 multiplicity_b_pos 520 345 3000
+end
+relationcanvas 134419 relation_ref 145299 // <association>
+  decenter_end 500
+  from ref 128403 z 2001 to ref 129939
+  no_role_a no_role_b
+  multiplicity_a_pos 1030 347 3000 multiplicity_b_pos 588 328 3000
+end
+relationcanvas 134547 relation_ref 145427 // <association>
+  decenter_begin 919
+  from ref 128403 z 2001 to ref 129811
+  no_role_a no_role_b
+  multiplicity_a_pos 795 461 3000 multiplicity_b_pos 579 350 3000
+end
+relationcanvas 134803 relation_ref 145555 // <association>
+  from ref 129683 z 2007 to ref 134675
+  no_role_a no_role_b
+  multiplicity_a_pos 494 522 3000 multiplicity_b_pos 540 684 3000
+end
+relationcanvas 134931 relation_ref 145683 // <association>
+  from ref 134675 z 2007 to ref 129427
+  no_role_a no_role_b
+  multiplicity_a_pos 115 496 3000 multiplicity_b_pos 441 497 3000
+end
+relationcanvas 135059 relation_ref 145811 // <association>
+  from ref 134675 z 2007 to ref 129171
+  no_role_a no_role_b
+  multiplicity_a_pos 1062 82 3000 multiplicity_b_pos 545 467 3000
+end
+relationcanvas 135315 relation_ref 152339 // turma_alunos
+  from ref 129427 z 2001 label "turma_alunos" italic max_width 255 xyz 40 394 2001 to ref 128019
+  no_role_a no_role_b
+  multiplicity_a_pos 44 361 3000 multiplicity_b_pos 60 444 3000
+end
+relationcanvas 135571 relation_ref 158995 // estabelecimentos_transportes
+  from ref 130323 z 2001 label "estabelecimentos_transportes" italic max_width 255 xyz 1225.5 486 2001 to ref 129939
+  no_role_a no_role_b
+  multiplicity_a_pos 1220 423 3000 multiplicity_b_pos 1390 620 3000
+end
+relationcanvas 135699 relation_ref 159123 // estabelecimentos_produtos
+  from ref 130451 z 2001 label "estabelecimentos_produtos" italic max_width 255 xyz 1226.5 323 2001 to ref 129939
+  no_role_a no_role_b
+  multiplicity_a_pos 1220 347 3000 multiplicity_b_pos 1377 347 3000
+end
+relationcanvas 135955 relation_ref 165779 // empresas_ramo
+  from ref 129811 z 2001 label "empresas_ramo" italic max_width 255 xyz 836 675.5 2001 to ref 130067
+  no_role_a no_role_b
+  multiplicity_a_pos 852 805 3000 multiplicity_b_pos 844 567 3000
+end
+relationcanvas 136083 relation_ref 165907 // zona_transportes
+  from ref 130195 z 2001 label "zona_transportes" italic max_width 255 xyz 1289 723 2001 to ref 130323
+  no_role_a no_role_b
+  multiplicity_a_pos 1378 683 3000 multiplicity_b_pos 1280 795 3000
+end
+end

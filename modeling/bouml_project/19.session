@@ -1,0 +1,17 @@
+window_sizes 1920 991 450 1464 937 0
+
+diagrams
+  active  classdiagram_ref 128147 // P_SIEstagios
+    1464 937 90 A0 13 0
+end
+show_stereotypes
+selected 
+package_ref 129 // P_SIEstagios
+open
+  class_ref 128275 // utilizador
+  class_ref 128403 // formador
+  class_ref 128531 // administrativo
+  class_ref 129811 // zona
+  class_ref 129939 // transporte
+end
+end

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>SIESTÁGIOS - Apresentação</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0056b3 0%, #003366 100%); /* Fundo azul */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .presentation-card {
+            background: white;
+            color: #333;
+            width: 90%;
+            max-width: 600px;
+            padding: 50px;
+            border-radius: 30px;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+            border: 5px solid #4da6ff;
+        }
+
+        .logo-area {
+            margin-bottom: 20px;
+            text-align: center; /* DESCOBI COMO SE CENTRA, POR FAVOR NÃO MEXAM */
+        }
+
+        /* Novo estilo para controlar o tamanho da imagem do ISCTE */
+        .iscte-logo {
+            max-width: 300px; /* Largura máxima para não estragar o cartão */
+            width: 100%;      /* Adapta-se se o ecrã for pequeno */
+            height: auto;     /* Mantém as proporções da imagem */
+            display: inline-block;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 32px;
+            color: #003366;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #666;
+            font-weight: normal;
+        }
+
+        .divider {
+            height: 4px;
+            width: 50px;
+            background-color: #0056b3;
+            margin: 30px auto;
+            border-radius: 2px;
+        }
+
+        .group-members {
+            text-align: left;
+            margin: 0 auto;
+            display: inline-block;
+            margin-bottom: 40px;
+        }
+
+        .member {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #444;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .member i { color: #0056b3; }
+
+        /* O BOTÃO QUE LEVA AO PHP */
+        .btn-enter {
+            display: inline-block;
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+            padding: 15px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 86, 179, 0.3);
+        }
+
+        .btn-enter:hover {
+            background-color: #003366;
+            transform: translateY(-3px); /* Efeito de subir */
+            box-shadow: 0 8px 20px rgba(0, 86, 179, 0.4);
+        }
+
+        .footer-note {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #999;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="presentation-card">
+        
+        <div class="logo-area">
+            <img src="logo_iscte.png" alt="Logótipo ISCTE" class="iscte-logo">
+        </div>
+
+        <h1>SIESTÁGIOS</h1>
+        <h2>Sistema de Gestão de Estágios - Parte 2</h2>
+
+        <div class="divider"></div>
+
+        <div class="group-members">
+            <div class="member"><i class="fas fa-user"></i> <strong>Aluno 1:</strong> Daniel Masqueiro (Nº 129853)</div>
+            <div class="member"><i class="fas fa-user"></i> <strong>Aluno 2:</strong> Gonçalo Sobral (Nº 129850)</div>
+            <div class="member"><i class="fas fa-user"></i> <strong>Aluno 3:</strong> Rafael Silva (Nº 129834)</div>
+            <div class="member"><i class="fas fa-users"></i> <strong>Turno:</strong> 03 - Grupo 41</div>
+        </div>
+
+        <br>
+
+        <a href="index.php" class="btn-enter">
+            Entrar na Plataforma <i class="fas fa-arrow-right" style="margin-left: 10px;"></i>
+        </a>
+
+        <div class="footer-note">
+            ISCTE - Instituto Universitário de Lisboa | Base de Dados 2025/2026
+        </div>
+
+    </div>
+
+</body>
+</html>
