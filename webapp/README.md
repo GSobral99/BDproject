@@ -5,7 +5,7 @@ Student), built on top of the schema in `database/parte2/estagios_parte2_dump_co
 
 ## Project Demo
 
-<video src="[https://github.com/GSobral99/BDproject/blob/main/docs/Demonstracaoprototipowebg41.mp4])" width="100%" controls></video>
+![Project Demo Video](https://github.com/GSobral99/BDproject/raw/main/docs/Demonstracaoprototipowebg41.mp4)
 
 ## How to Run Locally (XAMPP / WAMP / MAMP)
 
