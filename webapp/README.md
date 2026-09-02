@@ -4,8 +4,8 @@ Functional prototype in PHP + MySQL/MariaDB with three portals (Admin, Trainer,
 Student), built on top of the schema in `database/parte2/estagios_parte2_dump_completo.sql`.
 
 ## Project Demo
-https://github.com/GSobral99/BDproject/blob/main/docs/Demonstracaoprototipowebg41.mp4
-<video src="../docs/Demonstracaoprototipowebg41.mp4" width="100%" controls></video>
+
+<video src="[../docs/Demonstracaoprototipowebg41.mp4](https://github.com/GSobral99/BDproject/blob/main/docs/Demonstracaoprototipowebg41.mp4)" width="100%" controls></video>
 
 ## How to Run Locally (XAMPP / WAMP / MAMP)
 
